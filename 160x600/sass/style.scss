@@ -615,9 +615,9 @@ body.mrec .container {
 #f1-copy {
     position: absolute;
     display: table;
-    top: 0px;
-    left: 20px;
-    width: 120px;
+    top: 0;
+    left: 0;
+    width: 160px;
     height: 300px;
     z-index: 600;
 }
@@ -627,17 +627,17 @@ body.mrec .container {
     vertical-align: middle;
     font-family: 'brauerneue-regular';
     font-weight: normal;
-    font-size: 36px;
-    line-height: 37px;
+    font-size: 31px;
+    line-height: 34px;
     text-align: center;
     -webkit-font-smoothing: antialiased;
 }
 #f2-copy {
   position: absolute;
   display: table;
-  top: 0px;
-  left: 20px;
-  width: 120px;
+  top: 0;
+  left: 0;
+  width: 160px;
   height: 300px;
   z-index: 4960;
 }
@@ -660,8 +660,8 @@ body.mrec .container {
     vertical-align: middle;
     font-family: 'brauerneue-regular';
     font-weight: normal;
-    font-size: 36px;
-    line-height: 37px;
+    font-size: 31px;
+    line-height: 34px;
     text-align: center;
     -webkit-font-smoothing: antialiased;
 }
@@ -742,7 +742,7 @@ body.mrec .container {
     text-align: center;
     /*-webkit-font-smoothing: antialiased;*/
 }
-/*#price-left-copy {
+/*py {
     position: relative;
     display: inline-block;
     margin-right: 5px;
@@ -780,6 +780,7 @@ body.mrec .container {
     position: relative;
     display: block;
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 140px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;

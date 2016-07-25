@@ -180,7 +180,7 @@ function startAnimation() {
 
     // TESTING - goto specific time of animation
 //     tl.seek(10);
-//    tl.pause(10);
+   // tl.pause(7);
 }
 
 

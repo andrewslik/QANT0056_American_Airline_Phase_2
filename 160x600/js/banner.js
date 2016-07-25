@@ -161,7 +161,7 @@ function startAnimation() {
     tl.to(shapes, 2.2, {rotation:-160, transformOrigin: "50% 50%", ease: Sine.easeOut}, "10.5")
     tl.to(whiteShape, 2.5, {rotation: 0, scaleX: 1, scaleY: 1, x: -113, y: -559, ease: Sine.easeOut}, "10.5")
     tl.to(qantasLogoContainer, 1.5, {x:-2, y:265, scaleX: 1, scaleY: 1, ease: Sine.easeInOut}, "11")
-    tl.to(aaLogo, 1.6, {x:-1, y:224, scaleX: 1, scaleY: 1, ease: Sine.easeInOut}, "11")
+    tl.to(aaLogo, 1.5, {x:-1, y:207, scaleX: 1, scaleY: 1, ease: Sine.easeInOut}, "11")
     //
     tl.to(qantasLogoMono, .5, {autoAlpha:0, ease: Sine.easeOut}, "11.1")
     tl.to(qantasLogoColour, .5, {autoAlpha:1, ease: Sine.easeOut}, "11.1")
@@ -181,8 +181,8 @@ function startAnimation() {
     tl.from(ctaBtn, 1, {alpha: 0, ease: Sine.easeOut}, "12.5")
 
     // TESTING - goto specific time of animation
-//     tl.pause(10)
-//    tl.seek(6.5)
+    // tl.pause(4)
+    // tl.seek(10)
 }
 
 
