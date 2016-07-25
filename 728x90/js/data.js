@@ -43,12 +43,12 @@ devDynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].video_97
 devDynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].frame1_text_160x600 = "<br>Over 150<br>destinations<br>in the USA";
 devDynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].frame1_text_300x250 = "Over 150<br>destinations<br>in the USA";
 devDynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].frame1_text_300x600 = "Over 150 destinations<br>in the USA";
-devDynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].frame1_text_728x90 = "Over 150 destinations<br>in the USA";
+devDynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].frame1_text_728x90 = "Over 150 destinations in the USA";
 devDynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].frame1_text_970x250 = "Over 150 destinations in the USA";
 devDynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].frame2_text_160x600 = "<br>Two airlines,<br>one world<br>class experience";
 devDynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].frame2_text_300x250 = "Two airlines,<br>one world-class<br>experience";
 devDynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].frame2_text_300x600 = "<br>Two airlines,<br>one world-class<br>experience";
-devDynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].frame2_text_728x90 = "Two airlines, one<br>world-class experience";
+devDynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].frame2_text_728x90 = "Two airlines,<br>one world-class<br>experience";
 devDynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].frame2_text_970x250 = "Two airlines, one world-class experience";
 devDynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].frame3_text_160x600 = "Plan your USA adventure with Qantas and American Airlines";
 devDynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].frame3_text_300x250 = "Plan your USA<br>adventure with Qantas<br>and American Airlines";
@@ -72,10 +72,10 @@ function politeInit() {
     $("#f2-copy h1").html(dynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0]['frame2_text_' + size]);
     $("#f3-copy h1").html(dynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0]['frame3_text_' + size]);
 
-        if (dynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].is_default || !dynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].show_price)
-            backupAnimation();
-        else
-            loadFeed();
+    if (dynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].is_default || !dynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].show_price)
+        backupAnimation();
+    else
+        loadFeed();
 }
 
 function exit() {
@@ -90,11 +90,11 @@ function loadFeed() {
         async: false,
         contentType: "application/json",
         dataType: 'json',
-        success: function (json) {
+        success: function(json) {
 
             if (json.error) {
-              backupAnimation();
-              return;
+                backupAnimation();
+                return;
             }
 
             deal = json.dealQueryResult.result.deals.deal;
@@ -110,7 +110,6 @@ function loadFeed() {
 
             $("#f1-copy h1").html(dynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0]['frame1_text_' + size]);
             $("#f2-copy h1").html(dynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0]['frame2_text_' + size]);
-            //$("#f3-copy h1").html(dynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0]['frame3_text_' + size]);
 
             var f2 = dynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0]['frame2_text_' + size] + "<br/>";
 
@@ -168,7 +167,7 @@ function loadFeed() {
             if (imagesLoaded) {
                 initBanner();
             } else {
-                si = setInterval(function () {
+                si = setInterval(function() {
                     if (imagesLoaded) {
                         initBanner();
                         clearInterval(si);
@@ -176,7 +175,7 @@ function loadFeed() {
                 }, 250)
             }
         },
-        error: function (e) {
+        error: function(e) {
             console.log("ERROR");
             console.log(e);
             backupAnimation();
@@ -235,7 +234,7 @@ function videoSetup() {
     $('#video video > source:eq(2)').attr('src', webm);
 
     $('#video video').load();
-    $('#video video').bind('loadeddata', function (e) {
+    $('#video video').bind('loadeddata', function(e) {
 
         if (vid.readyState == 3 || vid.readyState == 4) {
             $('.bg-image-01').hide();
@@ -246,7 +245,7 @@ function videoSetup() {
 
     });
 
-    $('#video video').bind('error', function (e) {
+    $('#video video').bind('error', function(e) {
         $('#video').hide();
         $('.bg-image-01').attr('src', backgroundImage);
         initCSS();
