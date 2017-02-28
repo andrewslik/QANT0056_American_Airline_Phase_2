@@ -142,8 +142,8 @@ function startAnimation() {
     tl.to(qantasLogoContainer, 1.6, {x:-7, y:94, scaleX: .8, scaleY: .8, ease: Sine.easeInOut}, "11.1")
     tl.to(aaLogo, 1.6, {x:-44, y:90, scaleX: .85, scaleY: .85, ease: Sine.easeInOut}, "11.1")
 
-    tl.to(qantasLogoMono, .5, {autoAlpha:0, ease: Sine.easeOut}, "11.7")
-    tl.to(qantasLogoColour, .5, {autoAlpha:1, ease: Sine.easeOut}, "11.7")
+    tl.to(qantasLogoMono, .5, {autoAlpha:0, ease: Sine.easeOut}, "11.5")
+    tl.to(qantasLogoColour, .5, {autoAlpha:1, ease: Sine.easeOut}, "11.5")
     tl.from(logoDivider, 1, {scaleY: 0, transformOrigin: "50% 0%", y:"-20", ease: Sine.easeOut}, "12.1")
     tl.from(termsWrapper, 1, {alpha: 0, ease: Sine.easeOut}, "12.1")
 

@@ -42,8 +42,8 @@ function initCSS() {
     TweenLite.set($("#red-shape-end-frame"), {autoAlpha: 0, scaleX: .5, scaleY: .5 ,rotation: 0, x: 400,y: -400,overwrite: "none",force3D: false});
     TweenLite.set($("#red-shape-end-frame2"), {autoAlpha: 0, rotation: -50, y: 290, scaleX: .5,scaleY: .5});
 
-    TweenLite.set($("#qantas-logo-container"), {scaleX: 1.7, scaleY: 1.7, x:-45, y:-18});
-    TweenLite.set($("#aa-logo"), {scaleX: 1.7, scaleY: 1.7, x:-14, y:3});
+    TweenLite.set($("#qantas-logo-container"), {scaleX: 1.7, scaleY: 1.7, x:-48, y:-9});
+    TweenLite.set($("#aa-logo"), {scaleX: 1.7, scaleY: 1.7, x:-4, y:3});
 
 }
 
@@ -157,7 +157,7 @@ function startAnimation() {
     //FRAME 04
     tl.to(whiteShape, 3, {rotation:250, scaleX:.8, scaleY:.8, x:-557, y:-170, ease: Expo.easeInOut}, "10.5")
     tl.to(qantasLogoContainer, 1.6, {x:574, y:102, scaleX: .8, scaleY: .8, ease: Sine.easeInOut}, "11.1")
-    tl.to(aaLogo, 1.6, {x:176, y:101, scaleX: .85, scaleY: .85, ease: Sine.easeInOut}, "11.1")
+    tl.to(aaLogo, 1.6, {x:176, y:100, scaleX: .85, scaleY: .85, ease: Sine.easeInOut}, "11.1")
 
     tl.to(qantasLogoMono, .5, {autoAlpha:0, ease: Sine.easeOut}, "11.7")
     tl.to(qantasLogoColour, .5, {autoAlpha:1, ease: Sine.easeOut}, "11.7")

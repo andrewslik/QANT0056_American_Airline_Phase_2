@@ -532,9 +532,9 @@ body.mrec .container {
     position: absolute;
     z-index: 7999;
     width: 1px;
-    height: 29px;
-    left: 143px;
-    top: 522px;
+    height: 23px;
+    left: 146px;
+    top: 523px;
     background-color: #000;
 }
 #blue-shape {
@@ -735,6 +735,7 @@ body.mrec .container {
   line-height: 15px;
   letter-spacing: 1px;
   text-align: center;
+  -webkit-font-smoothing: antialiased;
 }
 #price-right-copy {
   position: relative;
@@ -747,6 +748,7 @@ body.mrec .container {
   line-height: 15px;
   letter-spacing: 1px;
   text-align: center;
+  -webkit-font-smoothing: antialiased;
 }
 #price-lockup {
     position: absolute;
@@ -812,7 +814,7 @@ body.mrec .container {
     line-height: 9px;
     font-family: Arial, sans-serif;
     font-weight: 200;
-    color: #000;
+    color: #666;
     z-index: 9999;
     cursor: pointer;
 }

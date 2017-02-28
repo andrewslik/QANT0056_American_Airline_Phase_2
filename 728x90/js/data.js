@@ -72,6 +72,8 @@ function politeInit() {
     $("#f2-copy h1").html(dynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0]['frame2_text_' + size]);
     $("#f3-copy h1").html(dynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0]['frame3_text_' + size]);
 
+    $("#cta-text").html(dynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].cta)
+
     if (dynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].is_default || !dynamicContent.SFID00421QFAirlineAA_Phase_2Red_PlanetJun16_Sheet1[0].show_price)
         backupAnimation();
     else

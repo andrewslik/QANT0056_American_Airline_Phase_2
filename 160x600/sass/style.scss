@@ -792,7 +792,7 @@ body.mrec .container {
 #price-right-copy {
     position: relative;
     display: block;
-    margin-top: 5px;
+    margin-top: -5px;
     width: 140px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
@@ -835,8 +835,10 @@ body.mrec .container {
     width: 140px;
 }
 #asterix-char {
-    position: absolute;
-    top: -8px;
+    // position: absolute;
+    // top: -8px;
+    top: -20px;
+    position: relative;
     font-family: 'brauerneue-bold';
     font-size: 16px;
     color: #fff;
@@ -877,7 +879,7 @@ body.mrec .container {
     line-height: 9px;
     font-family: Arial, sans-serif;
     font-weight: 200;
-    color: #000;
+    color: #666;
     z-index: 9999;
     cursor: pointer;
 }

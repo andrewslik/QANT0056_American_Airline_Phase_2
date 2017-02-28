@@ -160,11 +160,11 @@ function startAnimation() {
     // //FRAME 04
     tl.to(shapes, 2.2, {rotation:-160, transformOrigin: "50% 50%", ease: Sine.easeOut}, "10.5")
     tl.to(whiteShape, 2.5, {rotation: 0, scaleX: 1, scaleY: 1, x: -113, y: -559, ease: Sine.easeOut}, "10.5")
-    tl.to(qantasLogoContainer, 1.5, {x:-2, y:265, scaleX: 1, scaleY: 1, ease: Sine.easeInOut}, "11")
+    tl.to(qantasLogoContainer, 1.5, {x:-6, y:262, scaleX: 1, scaleY: 1, ease: Sine.easeInOut}, "11")
     tl.to(aaLogo, 1.5, {x:-1, y:207, scaleX: 1, scaleY: 1, ease: Sine.easeInOut}, "11")
     //
-    tl.to(qantasLogoMono, .5, {autoAlpha:0, ease: Sine.easeOut}, "11.1")
-    tl.to(qantasLogoColour, .5, {autoAlpha:1, ease: Sine.easeOut}, "11.1")
+    tl.to(qantasLogoMono, .7, {autoAlpha:0, ease: Sine.easeOut}, "10.8")
+    tl.to(qantasLogoColour, .7, {autoAlpha:1, ease: Sine.easeOut}, "10.8")
     tl.from(logoDivider, 1, {scaleY: 0, transformOrigin: "50% 0%", y:"-20", ease: Sine.easeOut}, "12.1")
     tl.from(termsWrapper, 1, {alpha: 0, ease: Sine.easeOut}, "12.1")
 

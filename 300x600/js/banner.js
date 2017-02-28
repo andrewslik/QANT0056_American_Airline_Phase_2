@@ -67,6 +67,9 @@ function adjustCopyLayout() {
     //         "lineHeight": "39px"
     //     })
     // }
+
+    var buttonOffset = ($(".banner").outerWidth()/2) - ($(".button").outerWidth()/2)
+    $(".button").css("left", buttonOffset)
 }
 
 function backupAnimation() {
